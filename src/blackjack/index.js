@@ -31,12 +31,6 @@ const puntosHTML = document.querySelectorAll('small');
 deck = crearDeck(tipos, especiales);
 
 
-
-
-
-
-
-
 // Eventos
 btnPedir.addEventListener('click', () => {
 
@@ -45,7 +39,7 @@ btnPedir.addEventListener('click', () => {
     puntosJugador = puntosJugador + valorCarta( carta );
     puntosHTML[0].innerText = puntosJugador;
     
-    // TODO: CREAR CARTA
+  
     const imgCarta = crearCartaHTML(carta);
     divCartasJugador.append( imgCarta );
 
